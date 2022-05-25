@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: hsl(0, 0%, 95%);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        min-width: 1440px;
+        min-height: 100vh;
+      }
+      .wrapper {
+        margin: 10rem auto;
+      }
+      .wrapper-head {
+        margin-bottom: 15rem;
+        text-align: center;
+      }
+      #heading {
+        opacity: 0.7;
+      }
+      #headingTwo {
+        font-size: 2.15rem;
+      }
+      .wrapper-head p {
+        margin-top: 1rem;
+        opacity: 0.5;
+      }
+      .wrapper-body {
+        display: flex;
+        flex-direction: row;
+        gap: 3.6rem;
+      }
+      .total {
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0 10px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        border-style: solid;
+        border-bottom-color: white;
+        border-left-color: white;
+        border-right-color: white;
+        padding: 3rem;
+        margin: 1rem;
+        width: 25rem;
+        height: 20rem;
+      }
+      .contOne {
+        border-top-color: aqua;
+      }
+
+      .contTwo {
+        margin-top: -10rem;
+      }
+      .cont-one {
+        border-top-color: red;
+      }
+      .cont-two {
+        border-top-color: orange;
+      }
+      .contThree {
+        border-top-color: blue;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-top: 5rem;
+      }
+      @media only screen and (max-width: 480px) {
+        .wrapper-head {
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+        .container {
+          min-width: 480px;
+          min-height: 100vh;
+        }
+        .wrapper-body {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1rem;
+        }
+        .contTwo {
+          margin-top: 1rem;
+        }
+        .cont-two {
+          margin-top: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper-head">
+          <h1 id="heading">Reliable, efficient delivery</h1>
+          <h1 id="headingTwo">Powered by Technology</h1>
+          <p>
+            Our Artificial Intelligence powered tools use millions of project
+            data <br />
+            points to ensure that your project is successful
+          </p>
+        </div>
+        <div class="wrapper-body">
+          <div class="contOne total">
+            <div class="cont">
+              <h2 class="header-txt">Supervisor</h2>
+              <p class="body-txt">
+                Monitors activity to identify project roadblocks
+              </p>
+              <img src="images/icon-supervisor.svg" />
+            </div>
+          </div>
+          <div class="contTwo">
+            <div class="cont-one total">
+              <h2 class="header-txt">Team Builder</h2>
+              <p class="body-txt">
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+              <img src="images/icon-team-builder.svg" />
+            </div>
+            <div class="cont-two total">
+              <h2 class="header-txt">Karma</h2>
+              <p class="body-txt">
+                Regularly evaluates our talent to ensure quality
+              </p>
+              <img src="images/icon-karma.svg" />
+            </div>
+          </div>
+          <div class="contThree total">
+            <div class="cont">
+              <h2 class="header-txt">Calculator</h2>
+              <p class="body-txt">
+                Uses data from past projects to provide better delivery
+                estimates
+              </p>
+              <img src="images/icon-calculator.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Reliable, efficient delivery
+  Powered by Technology
+
+  Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful
+
+  Supervisor
+  Monitors activity to identify project roadblocks
+
+  Team Builder
+  Scans our talent network to create the optimal team for your project
+
+  Karma
+  Regularly evaluates our talent to ensure quality
+
+  Calculator
+  Uses data from past projects to provide better delivery estimates -->
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
